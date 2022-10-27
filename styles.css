@@ -1,11 +1,9 @@
 body {
   text-align: center;
   background-color: #283149;
+  overflow: hidden;
 }
 
-::-webkit-scrollbar{
-  display: none;
-}
 
 h1 {
   font-size: 4rem;
