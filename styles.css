@@ -1,9 +1,6 @@
 body {
   text-align: center;
   background-color: #283149;
-
-    overflow: hidden;
-  
 }
 
 ::-webkit-scrollbar {
@@ -103,7 +100,7 @@ background: url(images/crash.png);
   background-color: white;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 920px) {
   h1 {
     font-size: 2rem;
   }
@@ -117,8 +114,6 @@ background: url(images/crash.png);
 }
 
 @media only screen and (max-width: 520px) {
- 
-
   h1 {
     font-size: 1rem;
   }
@@ -132,10 +127,12 @@ background: url(images/crash.png);
     font-size: 0%;
     margin: 2px;
   }
-
   footer {
     margin-top: 15px;
     font-size: 10px
+  }
+  body {
+    overflow: hidden;
   }
 }
 
