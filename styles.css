@@ -91,12 +91,12 @@ background: url(images/crash.png);
 }
 
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 420px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
    .set {
-   margin: 0;
+   margin: 0 auto 10px;
   }
   .drum{
     width: 100px;
