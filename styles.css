@@ -91,7 +91,7 @@ background: url(images/crash.png);
 }
 
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 520px) {
   h1 {
     font-size: 1rem;
   }
