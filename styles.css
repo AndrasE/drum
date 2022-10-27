@@ -99,11 +99,11 @@ background: url(images/crash.png);
    margin: 0 auto 10px;
   }
   .drum{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border: 3px solid #404B69;
     font-size: 0%;
+    margin: 5px;
   }
-
 }
 
