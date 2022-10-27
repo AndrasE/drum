@@ -28,6 +28,7 @@ a:hover {
 
 .w {
 background: url(images/kick.png);
+
 }
 .a {
 background: url(images/snare.png);
@@ -89,4 +90,18 @@ background: url(images/crash.png);
   background-color: white;
 }
 
+
+@media only screen and (max-width: 620px) {
+  h1 {
+    font-size: 2rem;
+  }
+   .set {
+   margin: 0;
+  }
+  .drum{
+    width: 100px;
+    height: 100px;
+  }
+
+}
 
