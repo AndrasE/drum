@@ -100,7 +100,7 @@ background: url(images/crash.png);
   background-color: white;
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 720px) {
   h1 {
     font-size: 2rem;
   }
@@ -109,7 +109,7 @@ background: url(images/crash.png);
     height: 100px;
     border: 3px solid #404B69;
     font-size: 0%;
-    margin: 5px 7px;
+    margin: auto;
     font-size: 2rem;
   }
   .set {
