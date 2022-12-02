@@ -19,10 +19,10 @@ Take care, code safe! 💻
 <br>
 
 ## Run 🚀
-As its only uses HTML, CSS you wont need much:
+As its only uses HTML, CSS and JS you wont need much:
 
 ```sh
-$ git clone https://github.com/AndrasE/firsty
+$ git clone https://github.com/AndrasE/drum
 $ cd PROJECTNAME
 $ open index.html
 ```
