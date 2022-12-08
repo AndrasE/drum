@@ -1,7 +1,7 @@
 <br>
 <p align="center">
   <a href="https://andrase.github.io/drum/" target="_blank" rel="noopener noreferrer">
-  <img src="https://github.com/AndrasE/raw-readme/blob/main/drum-readme-img.png?raw=true">
+  <img src="https://github.com/AndrasE/raw-readme/blob/main/drum-readme-img.png?raw=true" width="100" >
   </a>
 </p>
 <h3 align="center">
