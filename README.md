@@ -5,7 +5,7 @@
   </a>
 </p>
 <h3 align="center">
-  A simple play with Js event-listeners
+  Drum on JS event-listeners
 </h3>
 
 <br>
@@ -13,8 +13,7 @@
 ## Hi there 👋
 
 This project was part of my self-study on <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target="_blank" rel="noopener noreferrer">Udemy</a>. Featuring a forEach loop with click and keydown event listeners and a switch statement. 
-  
-Take care, code safe! 💻
+
 
 <br>
 
