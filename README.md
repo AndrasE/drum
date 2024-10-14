@@ -14,9 +14,6 @@
 
 This project was part of my self-study on <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp" target="_blank" rel="noopener noreferrer">Udemy</a>. Featuring a forEach loop with click and keydown event listeners and a switch statement. 
 
-
-<br>
-
 ## Run 🚀
 As its only uses HTML, CSS and JS you wont need much:
 
