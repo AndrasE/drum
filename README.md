@@ -7,6 +7,9 @@
   Drum on JavaScript  EventListener
 </h3>
 
+<div align="center">
+<img src="https://github.com/AndrasE/raw-readme/blob/9c4de24486543db9f7378b223611919b183e59a7/thumbs/drum.png" width="420">
+</div>
 
 ## Hi there 👋
 
