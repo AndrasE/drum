@@ -2,34 +2,59 @@ body {
   text-align: center;
   background-color: #283149;
   font-family: "Arvo", cursive;
-}
-
-::-webkit-scrollbar {
-  width: 0.25rem;
-}
-
-::-webkit-scrollbar-track {
-  background: #393939;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #151515;
-}
-
-h1 {
-  font-size: 4rem;
-  color: #dbedf3;
-
-  text-shadow: 3px 0 #da0463;
-}
-
-.container {
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0;
+  color: #dbedf3;
 }
 
+.container {
+  width: 80%; /* Or any percentage that works for you */
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin: 0;
+  text-shadow: 3px 0 #da0463;
+  padding: 15px;
+}
+
+.set {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates a 4-column layout */
+  gap: 10px;
+  width: 100%;
+}
+
+.drum {
+  outline: none;
+  border: 8px solid #404b69;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  background-size: cover;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Drum images */
 .w {
   background: url(images/kick.png);
 }
@@ -52,35 +77,13 @@ h1 {
   background: url(images/crash.png);
 }
 
-.set {
-  margin: 10% auto;
-  max-width: 800px;
-}
-
 .pressed {
   box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
 }
 
-.drum {
-  outline: none;
-  border: 8px solid #404b69;
-  font-size: 3rem;
-  font-weight: 900;
-  color: #da0463;
-  text-shadow: 3px 0 #dbedf3;
-  border-radius: 15px;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 10px;
-  background-color: white;
-}
-
 footer {
-  color: #dbedf3;
-  font-family: sans-serif;
+  padding: 15px;
 }
 
 a {
@@ -90,55 +93,4 @@ a {
 
 a:hover {
   text-shadow: 1px 0 #da0463;
-}
-
-@media only screen and (max-width: 1000px) {
-  .drum {
-    border-width: 5px;
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  h1 {
-    font-size: 2rem;
-  }
-  .drum {
-    width: 120px;
-    height: 120px;
-    border: 3px solid #404b69;
-    margin: 10px 20px;
-    font-size: 2rem;
-  }
-  .set {
-    margin: 4% auto;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  h1 {
-    font-size: 1rem;
-  }
-
-  .set {
-    margin: 0 auto 10px;
-  }
-
-  .drum {
-    width: 70px;
-    height: 70px;
-    border: 3px solid #404b69;
-    font-size: 0%;
-    margin: 5px 5px 0;
-  }
-
-  footer {
-    margin-top: 15px;
-    font-size: 10px;
-  }
-
-  body {
-    overflow: hidden;
-  }
 }
