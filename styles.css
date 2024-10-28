@@ -27,7 +27,7 @@ h1 {
   margin: 0;
   color: #dbedf3;
   text-shadow: 3px 0 #da0463;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 .set {
@@ -92,7 +92,7 @@ h1 {
 }
 
 footer {
-  padding-top: 30px;
+  padding: 30px;
 }
 
 a {
