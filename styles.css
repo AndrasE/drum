@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: #283149;
+  font-family: "Arvo", cursive;
 }
 
 ::-webkit-scrollbar {
@@ -17,80 +18,57 @@ body {
 
 h1 {
   font-size: 4rem;
-  color: #DBEDF3;
-  font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
+  color: #dbedf3;
+
+  text-shadow: 3px 0 #da0463;
 }
 
-footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
-}
-
-a {
-  color: #DBEDF3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-shadow: 1px 0 #DA0463;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .w {
-background: url(images/kick.png);
-
+  background: url(images/kick.png);
 }
 .a {
-background: url(images/snare.png);
+  background: url(images/snare.png);
 }
-
 .s {
-background: url(images/tom1.png);
+  background: url(images/tom1.png);
 }
-
 .d {
-background: url(images/tom2.png);
+  background: url(images/tom2.png);
 }
-
 .j {
-background: url(images/tom3.png);
+  background: url(images/tom3.png);
 }
-
 .k {
-background: url(images/tom4.png);
+  background: url(images/tom4.png);
 }
-
 .l {
-background: url(images/crash.png);
+  background: url(images/crash.png);
 }
 
 .set {
   margin: 10% auto;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
+  max-width: 800px;
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
+  box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
-}
-
-.red {
-  color: red;
 }
 
 .drum {
   outline: none;
-  border: 10px solid #404B69;
+  border: 8px solid #404b69;
   font-size: 3rem;
-  font-family: 'Arvo', cursive;
-  line-height: 2;
   font-weight: 900;
-  color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
   border-radius: 15px;
   display: inline-block;
   width: 150px;
@@ -100,15 +78,36 @@ background: url(images/crash.png);
   background-color: white;
 }
 
+footer {
+  color: #dbedf3;
+  font-family: sans-serif;
+}
+
+a {
+  color: #dbedf3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 1px 0 #da0463;
+}
+
+@media only screen and (max-width: 1000px) {
+  .drum {
+    border-width: 5px;
+    width: 120px;
+    height: 120px;
+  }
+}
+
 @media only screen and (max-width: 720px) {
   h1 {
     font-size: 2rem;
   }
-  .drum{
-    width: 100px;
-    height: 100px;
-    border: 3px solid #404B69;
-    font-size: 0%;
+  .drum {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #404b69;
     margin: 10px 20px;
     font-size: 2rem;
   }
@@ -121,22 +120,25 @@ background: url(images/crash.png);
   h1 {
     font-size: 1rem;
   }
-   .set {
-   margin: 0 auto 10px;
+
+  .set {
+    margin: 0 auto 10px;
   }
-  .drum{
+
+  .drum {
     width: 70px;
     height: 70px;
-    border: 3px solid #404B69;
+    border: 3px solid #404b69;
     font-size: 0%;
     margin: 5px 5px 0;
   }
+
   footer {
     margin-top: 15px;
-    font-size: 10px
+    font-size: 10px;
   }
+
   body {
     overflow: hidden;
   }
 }
-
