@@ -1,6 +1,5 @@
 for (i = 0; i < document.querySelectorAll(".drum").length; i++) {
-  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
-
+  document.querySelectorAll(".drum")[i].addEventListener("click", function () {
     var buttonInnerHTML = this.innerHTML;
 
     makeSound(buttonInnerHTML);
@@ -9,16 +8,13 @@ for (i = 0; i < document.querySelectorAll(".drum").length; i++) {
   });
 }
 
-document.addEventListener("keydown", function(event) {
-
+document.addEventListener("keydown", function (event) {
   makeSound(event.key);
 
   buttonAnimation(event.key);
-
-})
+});
 
 function makeSound(key) {
-
   switch (key) {
     case "w":
       var kickbass = new Audio("sounds/kick-bass.mp3");
@@ -61,12 +57,11 @@ function makeSound(key) {
 }
 
 function buttonAnimation(currentKey) {
+  var activeButton = document.querySelector("." + currentKey);
 
-var activeButton = document.querySelector("." + currentKey);
+  activeButton.classList.add("pressed");
 
-activeButton.classList.add("pressed");
-
-setTimeout(function() {
-  activeButton.classList.remove("pressed");
-}, 100);
+  setTimeout(function () {
+    activeButton.classList.remove("pressed");
+  }, 100);
 }

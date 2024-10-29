@@ -13,8 +13,7 @@ body {
 }
 
 .container {
-  width: 80%; /* Or any percentage that works for you */
-  max-width: 650px;
+  max-width: 1000px;
   aspect-ratio: 16 / 9;
   display: flex;
   flex-direction: column;
@@ -36,6 +35,14 @@ h1 {
   gap: 10px;
   width: 100%;
   justify-items: center;
+}
+
+.set button:nth-child(5),
+.set button:nth-child(6),
+.set button:nth-child(7) {
+  grid-column: span 1;
+  justify-self: center;
+  margin-left: 100%;
 }
 
 .drum {
