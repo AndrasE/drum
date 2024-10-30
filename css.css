@@ -13,101 +13,85 @@ body {
 }
 
 .container {
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 90vw;
-  max-width: 700px;
 }
 
 h1 {
-  font-size: clamp(1.3rem, 4vw, 4rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   margin: 0;
+  color: #dbedf3;
   text-shadow: 3px 0 #da0463;
-  padding: 20px;
+  padding: 30px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.set {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+  justify-items: center;
 }
 
 .drum {
   outline: none;
-  border: 6px solid #404b69;
-  font-size: clamp(1.2rem, 4vw, 4rem);
+  border: 8px solid #404b69;
+  font-size: clamp(2rem, 2.5vw, 3rem);
   font-weight: 900;
   color: #da0463;
   text-shadow: 3px 0 #dbedf3;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 150px;
   aspect-ratio: 1 / 1;
-  width: 200px;
   background-color: white;
   text-align: center;
   cursor: pointer;
-  margin: 10px;
-  background-size: cover;
 }
 
-@media screen and (max-width: 600px) {
-  .drum {
-    border: 3px solid #404b69;
-    width: 24vw;
-    max-width: 120px;
-    margin: 3px;
-  }
+.drum img {
+  width: 60%;
+  height: auto;
 }
 
 /* Drum images */
 .w {
   background: url(images/kick.png);
-  background-size: cover;
 }
 .a {
   background: url(images/snare.png);
-  background-size: cover;
 }
 .s {
   background: url(images/tom1.png);
-  background-size: cover;
 }
 .d {
   background: url(images/tom2.png);
-  background-size: cover;
 }
 .j {
   background: url(images/tom3.png);
-  background-size: cover;
 }
 .k {
   background: url(images/tom4.png);
-  background-size: cover;
 }
 .l {
   background: url(images/crash.png);
-  background-size: cover;
-}
-.r {
-  background: url(images/rick.png);
-  background-size: cover;
-  transition: background-image 0.3s ease-in-out;
-}
-
-.r.rick-gif {
-  background: url(images/rick.gif);
-  background-size: cover;
 }
 
 .pressed {
-  box-shadow: 0 3px 4px 0 #3b91ad;
-  opacity: 0.7;
+  box-shadow: 0 3px 4px 0 #688bac;
+  opacity: 0.8;
 }
 
 footer {
-  padding: 20px;
-  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+  padding: 30px;
 }
 
 a {

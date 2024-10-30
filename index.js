@@ -14,6 +14,9 @@ document.addEventListener("keydown", function (event) {
   buttonAnimation(event.key);
 });
 
+let canPlayRick = true;
+const imageElement = document.querySelector(".r");
+
 function makeSound(key) {
   switch (key) {
     case "w":
@@ -52,8 +55,18 @@ function makeSound(key) {
       break;
 
     case "r":
-      var rick = new Audio("sounds/rick.mp3");
-      rick.play();
+      if (canPlayRick) {
+        var rick = new Audio("sounds/rick.mp3");
+        rick.play();
+
+        imageElement.classList.add("rick-gif");
+        canPlayRick = false;
+
+        setTimeout(() => {
+          imageElement.classList.remove("rick-gif");
+          canPlayRick = true;
+        }, 18000);
+      }
       break;
 
     default:
