@@ -59,11 +59,6 @@ h1 {
   cursor: pointer;
 }
 
-.drum img {
-  width: 60%;
-  height: auto;
-}
-
 /* Drum images */
 .w {
   background: url(images/kick.png);
@@ -85,6 +80,9 @@ h1 {
 }
 .l {
   background: url(images/crash.png);
+}
+.r {
+  background: url(images/rick.png);
 }
 
 .pressed {

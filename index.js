@@ -51,6 +51,11 @@ function makeSound(key) {
       crash.play();
       break;
 
+    case "r":
+      var rick = new Audio("sounds/rick.mp3");
+      rick.play();
+      break;
+
     default:
       console.log(key);
   }
