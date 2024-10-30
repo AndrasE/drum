@@ -54,13 +54,16 @@ h1 {
 @media screen and (max-width: 600px) {
   .drum {
     border: 3px solid #404b69;
-    width: 12vw;
+    width: 20vw;
     max-width: 120px;
     margin: 2px;
   }
   @media screen and (max-height: 400px) {
+    body {
+      justify-content: flex-start;
+    }
     .h1 {
-      padding: 40px;
+      padding: 10px;
     }
   }
 }
