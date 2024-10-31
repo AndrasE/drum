@@ -10,6 +10,7 @@ body {
   align-items: center;
   flex-direction: column;
   margin: 0;
+  padding: 5px;
 }
 
 .container {
@@ -74,6 +75,12 @@ h1 {
   }
 }
 
+@media (orientation: landscape) {
+  .footer {
+    display: none;
+  }
+}
+
 /* Drum images */
 .w {
   background: url(images/kick.png);
@@ -122,7 +129,7 @@ h1 {
 footer {
   position: absolute;
   bottom: 0;
-  padding: 10px;
+  padding: 5px;
   font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
